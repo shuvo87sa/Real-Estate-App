@@ -1,2 +1,2 @@
 # Real-Estate-App
-This is a real estate app.
+This is a Real estate app.
