@@ -5,9 +5,9 @@ function Navbar(){
     const [open,setOpen] = useState(false)
     return (
         <nav>
-            <div className="left">n
+            <div className="left">
                 <a href="/" className="logo">
-                   <img src="./...logo will here" alt="" />
+                   <img src="logo2.png" alt="" />
                    <span>UrbanHaven</span>
                 </a>
                 <a href="/">Home</a>
