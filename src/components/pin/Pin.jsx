@@ -1,34 +1,33 @@
-import { Marker, Popup } from 'react-leaflet';
-import './pin.scss';
-// import Map from '../map/Map';
+import { Marker, Popup } from "react-leaflet";
+import "./pin.scss";
 
-// console.log(Map);
-// console.log("test");  //not fount Pin page why??
+function Pin({ item }) {
 
+  if (!item || !item.latitude || !item.longitude) {
+    console.error("Invalid item data:", item); 
+    return null; 
+  }
 
-function Pin({item}){
-
-    // console.log(item);  {/* not found item.why?? */}
-
-    return (
-        // <Marker position={[item.latitude, item.longitude]}>
-        <Marker position={[23.7541, 90.3979]}>    {/* test code */}
-            <Popup>
+  return (
+    <Marker position={[item.latitude, item.longitude]}>
+      <Popup>
+          <div className="popupContainer">
+             <img src={item.img} alt=""  />
+            <div className="textContainer">
+                <h3>{item.title}</h3>
+                {/* {item.address} */}
+                <h9 style={{ color: 'Orange' }}>{item.address}</h9>
                 
-            </Popup>
-        </Marker>
+                <span >{item.bedroom} bedroom</span>
+                <span>{item.bathroom} bathroom</span>
+                
+                <b style={{color:"MediumBlue"}}>Amount: {item.price} tk</b>
 
-    //     {/* ***extra code get grom chatgpt,3rd try(not in main code) --dlt this 02** */}
-    //    <Marker position={[item.latitude, item.longitude]}>
-    //          <Popup>
-    //             <h3>{item.title}</h3>
-    //              <p>{item.adress}</p>
-    //              <p>Price: {item.price}</p>
-    //          </Popup>
-    //      </Marker>
-    )
+            </div>
+          </div>
+      </Popup>
+    </Marker>
+  );
 }
-console.log(item);
-
 
 export default Pin;

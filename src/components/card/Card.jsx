@@ -13,9 +13,9 @@ function Card({ item }){
                 <Link to={'/${item.id}'}>{item.title}</Link>
                </h2>
 
-               <p className='adress'>
+               <p className='address'>
                 <img src="/pin.png" alt="" />
-                <span>{item.adress}</span>
+                <span>{item.address}</span>
                </p>
                <p className='price'>{item.price} tk</p>
                <div className="bottom">
