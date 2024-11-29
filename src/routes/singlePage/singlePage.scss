@@ -1,11 +1,23 @@
 @import "../../responsive.scss";
+
 .singlePage{
     display: flex;
     height: 100%;
+
+    @include md{
+        flex-direction: column;
+        overflow: scroll;
+    }
     .details{
         flex: 3;
         height: 100%;
         overflow: scroll;
+
+        @include md{
+            flex: none;
+            height: max-content;
+            margin-bottom: 50px ;
+        }
 
         .wrapper{
             padding-right: 50px;
@@ -75,6 +87,13 @@
         background-color: #fcf5f3 ;
         height: 100%;
         overflow: scroll;
+
+        @include md{
+            flex: none;
+            height: max-content;
+            margin-bottom: 50px;
+        }
+
 
         .wrapper{
             padding: 0px 20px;
