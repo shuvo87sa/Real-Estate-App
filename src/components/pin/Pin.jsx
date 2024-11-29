@@ -1,4 +1,5 @@
 import { Marker, Popup } from "react-leaflet";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import "./pin.scss";
 
 function Pin({ item }) {
@@ -14,14 +15,15 @@ function Pin({ item }) {
           <div className="popupContainer">
              <img src={item.img} alt=""  />
             <div className="textContainer">
-                <h3>{item.title}</h3>
+               <Link to={`/${item.id}`}>{item.title}</Link>
+                {/* <h3>{item.title}</h3> */}
                 {/* {item.address} */}
                 <h9 style={{ color: 'Orange' }}>{item.address}</h9>
                 
                 <span >{item.bedroom} bedroom</span>
                 <span>{item.bathroom} bathroom</span>
                 
-                <b style={{color:"MediumBlue"}}>Amount: {item.price} tk</b>
+                <b style={{color:"MediumBlue"}}>{item.price} tk</b>
 
             </div>
           </div>

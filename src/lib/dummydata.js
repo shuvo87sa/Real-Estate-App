@@ -8,7 +8,7 @@ export const listData = [
      price: 20000000,
      address: "240/2 Dhanmondi 1 ,Block C",
      FllorArea:1268,
-    //  latitude: 23.7456,
+     latitude: 23.7456,
      longitude: 90.3763,
    },
    {
@@ -84,9 +84,38 @@ export const listData = [
      bedroom: 3,
      bathroom: 2,
      price: 85000000,
-     address: "Airport Road, Dhaka",
+     address: "Airport Road, Dhaka", 
      latitude: 23.8498,
      longitude: 90.4056,
    },
  ];
  
+export const singlePostData = {
+  id: 1,
+  title: "A great Apartment Next to the PlayGround",
+  price: 20000000,
+  images: [ 
+     "https://images.pexels.com/photos/271816/pexels-photo-271816.jpeg?cs=srgb&dl=pexels-pixabay-271816.jpg&fm=jpg",
+     "https://wallpapers.com/images/hd/room-background-o8i7ioca4ajdi1r8.jpg",
+     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQU8Yzt9sRiV6XMdrBGfThDCRjYNqSRQtnkQ&s",
+     "https://watermark.lovepik.com/photo/20211208/large/lovepik-bedroom-model-room-sample-room-picture_501599837.jpg",
+  ],
+  bedRooms: 2,
+  bathroom: 1,
+  size: 861,
+  latitude: 23.7456,
+  longitude: 90.3763,
+  city: "Dhaka",
+  address: "240/2 Dhanmondi 1 ,Block C",
+  school: "250m away",
+  bus: "60m away",
+  restaurant: "50m away",
+  description: "A good nice view flat, has a nice window & a nice view, A good nice view flat, has a nice window & a nice view,pA good nice view flat, has a nice window & a nice view",
+  };
+  
+  
+export const userData = {
+  id: 1,
+  name: "Sabbir",
+  img: "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+};
