@@ -95,7 +95,7 @@ export const singlePostData = {
   title: "A great Apartment Next to the PlayGround",
   price: 20000000,
   images: [ 
-     "https://images.pexels.com/photos/271816/pexels-photo-271816.jpeg?cs=srgb&dl=pexels-pixabay-271816.jpg&fm=jpg",
+     "https://images.pexels.com/photos/1571468/pexels-photo-1571468.jpeg?cs=srgb&dl=pexels-fotoaibe-1571468.jpg&fm=jpg",
      "https://wallpapers.com/images/hd/room-background-o8i7ioca4ajdi1r8.jpg",
      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQU8Yzt9sRiV6XMdrBGfThDCRjYNqSRQtnkQ&s",
      "https://watermark.lovepik.com/photo/20211208/large/lovepik-bedroom-model-room-sample-room-picture_501599837.jpg",
