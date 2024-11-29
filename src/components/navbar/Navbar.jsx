@@ -24,7 +24,10 @@ function Navbar(){
                     <img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                     alt="" />
                  <span>Sabbir hossen</span>
-                 <Link to="/profile" className="profile">Profile</Link>
+                 <Link to="/profile" className="profile">
+                    <div className="notification">3</div>
+                    <span>Profile</span>
+                 </Link>
                 </div>
                ) : (
                 <>
